@@ -32,8 +32,13 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
   - 2nd line: the name of target repo
   - 3rd line: the branch in target repo
   - 4th line: the main script file to run
-  - 5th line: expire count more than which the main script has run, the github.lua frame will check if new commit is on github. Set this to 0 to disable autocheck.
+  - 5th line: expire count more than which the main script has run, the github.lua frame will check if new commit is on github. Set this to 0 to disable autocheck
 
 #### Format of file `/token`
-  - 1st line: the auth token from github. you can [create a token](https://github.com/settings/tokens) if you have a github account or use a server-shared one if you are member of SJTU Sandbox Asso, just ask liooil.
+  - 1st line: the auth token from github. you can [create a token](https://github.com/settings/tokens) if you have a github account or use a server-shared one if you are member of SJTU Sandbox Asso, just ask liooil
 
+### Announcements
+  - Due to CC, this program can not download binary files  
+  - The ascii file which contains non-ascii characters will be unknown code  
+  - File which size is over 300000 bytes will not be downloaded  
+  - This program is released under GPL by shiraihii, SJTU Sandbox Asso.
