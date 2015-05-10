@@ -24,3 +24,7 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle.
         
         - Check if program was downloaded
         
+  - Create a file `config`
+  - Create a file `token`
+  - Rename the file `github.lua` to `startup`
+        
