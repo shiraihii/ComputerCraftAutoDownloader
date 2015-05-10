@@ -41,4 +41,4 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
   - Due to CC, this program can not download binary files  
   - The ascii file which contains non-ascii characters will be unknown code  
   - File which size is over 300000 bytes will not be downloaded  
-  - This program is released under GPL by shiraihii, SJTU Sandbox Asso.
+  - This program is released by shiraihii, SJTU Sandbox Asso. under GPL
