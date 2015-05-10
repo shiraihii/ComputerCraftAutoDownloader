@@ -15,7 +15,7 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
      - If you are playing in a Server and have no access to Server's Files
         - Open a turtle ahd type  
         `lua`  
-        `cd /`
+        `cd /`  
         `content = http.get("https://raw.github.com/shiraihii/ComputerCraftAutoDownloader/master/github.lua")`  
         `file = fs.open("github.lua", "w")`  
         `file.write(content.readAll())`  
