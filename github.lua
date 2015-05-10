@@ -41,14 +41,14 @@ local __g_file_List = {dirs = {}, files = {}}
 function downloadFile( path, url, name )
 	if name then
 		print("===Downloading File: "..name)
-		dirPath = path:gmatch('([%w%_%.% %-%+%,%;%:%*%#%=%/]+)/'..name..'$')()
+		local dirPath = path:gmatch('([%w%_%.% %-%+%,%;%:%*%#%=%/]+)/'..name..'$')()
 		if dirPath ~= nil and not fs.isDir(dirPath) then
 			fs.makeDir(dirPath)
 		end
 
 		local content = http.get(url)
 		if content then
-			file = fs.open(path, "w")
+			local file = fs.open(path, "w")
 			file.write(content.readAll())
 			file.close()
 		else
