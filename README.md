@@ -2,7 +2,7 @@
 
 This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
 
->Here is ComputerCraft http://www.computercraft.info/
+>Here is ComputerCraft http://www.computercraft.info/, wroten by dan200
 
 ### ComputerCraft Auto Downloader
 #### What can this program do
