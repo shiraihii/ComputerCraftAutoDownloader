@@ -13,16 +13,19 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
   - Download github.lua in this repo to a Turtle
      - You can download it to CC's ROM if you are playing in Single Mode or you are a Server's Admin
      - If you are playing in a Server and have no access to Server's Files
-        - Open a turtle ahd type
+        - Open a turtle ahd type  
         `lua`  
+        `cd /`
         `content = http.get("https://raw.github.com/shiraihii/ComputerCraftAutoDownloader/master/github.lua")`  
         `file = fs.open("github.lua", "w")`  
         `file.write(content.readAll())`  
         `file.close()`  
         `exit()`  
         - Check if program was downloaded  
-  - Create a file `config`  
-  - Create a file `token`  
-  - Run `github.lua` to test it
-  - Rename the file `github.lua` to `startup`  
+  - Create a file `/config`  
+  - Create a file `/token`  
+  - Run `/github.lua` to test it
+  - Rename the file `/github.lua` to `/startup`  
+
+#### Format of file `config`
         
