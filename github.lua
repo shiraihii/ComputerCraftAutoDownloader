@@ -143,14 +143,20 @@ function readConfig()
 		error()
 	end
 
-	if fs.exists("/github/token") then
-		local fToken = fs.open("/github/token", "r")	
+	if fs.exists("/rom/token") then
+		local fToken = fs.open("/rom/token", "r")	
 		__g_AuthToken = fToken.readLine()
 		fToken.close()
 	else
-		print("===Please Create a Token File")
-		print("===See github/shiraihii/ComputerCraftAutoDownloader")
-		error()
+		if fs.exists("/github/token") then
+			local fToken = fs.open("/github/token", "r")	
+			__g_AuthToken = fToken.readLine()
+			fToken.close()
+		else
+			print("===Please Create a Token File")
+			print("===See github/shiraihii/ComputerCraftAutoDownloader")
+			error()
+		end
 	end
 
 	if fs.exists("/github/current") then
