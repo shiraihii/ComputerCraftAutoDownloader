@@ -22,19 +22,19 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
         `file.close()`  
         `exit()`  
         - Check if program was downloaded  
-  - Create a file `/config`  
-  - Create a file `/token`  
+  - Create a file `/github/config`  
+  - Create a file `/github/token`  
   - Run `/github.lua` to test it
   - Rename the file `/github.lua` to `/startup`  
 
-#### Format of file `/config`
+#### Format of file `/github/config`
   - 1st line: the owner of target repo
   - 2nd line: the name of target repo
   - 3rd line: the branch in target repo
   - 4th line: the main script file to run
   - 5th line: expire count more than which the main script has run, the github.lua frame will check if new commit is on github. Set this to 0 to disable autocheck
 
-#### Format of file `/token`
+#### Format of file `/github/token`
   - 1st line: the auth token from github. you can [create a token](https://github.com/settings/tokens) if you have a github account, MAKE SURE TO UNCHECK ALL SCOPES FOR THIS TOKEN, or use a server-shared one if you are member of SJTU Sandbox Asso, just ask liooil
 
 ### Announcements
@@ -42,7 +42,7 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
   - The ascii file which contains non-ascii characters will be unknown code  
   - File which size is over 300000 bytes will not be downloaded  
   - DO NOT SET TARGET-REPO IN CONFIG TO THIS REPO, IT WILL RUN RECURSIVELY
-  - This program will create a file `/current`, make sure you target repo's script will not modify github.lua, config, token and current.  
+  - This program will create a file `/github/current` and a dir `/repos`, make sure you target repo's script will not modify github.lua, config, token and current.  
   - This program is released by shiraihii, SJTU Sandbox Asso. under GPL  
 
 --------
@@ -68,12 +68,12 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
         `file.close()`  
         `exit()`  
         - 最后检查一下`/github.lua`有没有正确地下下来  
-  - 建立配置文件 `/config`  
-  - 建立认证文件 `/token`  
+  - 建立配置文件 `/github/config`  
+  - 建立认证文件 `/github/token`  
   - 运行 `/github.lua` 测试一下程序能否正常运行  
   - 把 `/github.lua` 改名为 `/startup`这样就能自动运行了  
 
-#### 配置文件 `/config`的格式  
+#### 配置文件 `/github/config`的格式  
   - 第一行: 目标repo的拥有者用户名  
   - 第二行: 目标repo的repo名  
   - 第三行: 分支名  
@@ -88,5 +88,5 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
   - 对于文本文件，若其中含有非西文字符，下载下来后会变成乱码，CC不支持非西文字符，所以全用英语好了  
   - 大小超过300000字节的文件将不被下载  
   - 不要将目标repo指向这个repo，否则会导致程序递归执行，归执行，执行，行，...... **不行！**  
-  - 该程序运行中会产生文件 `/current`, 目标文件不要更改以下四个文件:github.lua, config, token, current
+  - 该程序运行中会产生文件 `/github/current`还有文件夹`/repos`，目标文件不要更改以下四个文件:github.lua, config, token, current
   - 该程序由shiraihii，SJTU沙盒游戏社发布，适用GPL
