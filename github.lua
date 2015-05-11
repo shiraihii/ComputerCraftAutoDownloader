@@ -122,16 +122,15 @@ end
 
 -- Write Current
 function writeCurrent()
-	local fCurrent = fs.open("current", "w")
-	fCurrent.writeLine(__g_var_count)
+	local fCurrent = fs.open("/github/current", "w")
 	fCurrent.writeLine(__g_var_commit)
 	fCurrent.close()
 end
 
 -- Read Config
 function readConfig()
-	if fs.exists("config") then 
-		local fConfig = fs.open("config", "r")
+	if fs.exists("/github/config") then 
+		local fConfig = fs.open("/github/config", "r")
 		__g_User = fConfig.readLine()
 		__g_Repo = fConfig.readLine()
 		__g_Branch = fConfig.readLine()
@@ -144,8 +143,8 @@ function readConfig()
 		error()
 	end
 
-	if fs.exists("token") then
-		local fToken = fs.open("token", "r")	
+	if fs.exists("/github/token") then
+		local fToken = fs.open("/github/token", "r")	
 		__g_AuthToken = fToken.readLine()
 		fToken.close()
 	else
@@ -154,8 +153,8 @@ function readConfig()
 		error()
 	end
 
-	if fs.exists("current") then
-		local fCurrent = fs.open("current", "r")
+	if fs.exists("/github/current") then
+		local fCurrent = fs.open("/github/current", "r")
 		__g_var_count = fCurrent.readLine()
 		__g_var_commit = fCurrent.readLine()
 		fCurrent.close()
@@ -219,7 +218,6 @@ while true do
 			print("===Run Count "..__g_var_count)
 			dofile(__fRunFile)
 			__g_var_count = __g_var_count + 1
-			writeCurrent()
 		end
 	else
 		print("===Cannot found main script file")
