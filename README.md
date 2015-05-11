@@ -42,4 +42,5 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
   - The ascii file which contains non-ascii characters will be unknown code  
   - File which size is over 300000 bytes will not be downloaded  
   - DO NOT SET TARGET-REPO IN CONFIG TO THIS REPO, IT WILL RUN RECURSIVELY
+  - This program will create a file `/current`, make sure you target repo's script will not modify github.lua, config, token and current.
   - This program is released by shiraihii, SJTU Sandbox Asso. under GPL  
