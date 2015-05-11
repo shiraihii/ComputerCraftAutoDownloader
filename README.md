@@ -79,7 +79,8 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
   - 第五行: 一个数字，当目标脚本文件被执行了该数字制定的次数以后，主框架程序(该程序)将会连接github检查是否有新的提交，若有会自动下载新版本的程序。若将改数字定为0将会关闭该功能  
 
 #### 认证文件 `/github/token`(或者 `/rom/token`)的格式  
-  - 第一行: github的认证token，如果你是github用户你可以[创建一个新的Token](https://github.com/settings/tokens)**注意一定要取消权限上面所有的勾，因为你只需要这个token来防止程序访问Github的API达到上限，不需要更改**。如果你是SJTU沙L东舰马骨码麻群的成员，你可以使用协会公用Token，问社长liooil或者我都行  
+  - 第一行: github的认证token，如果你是github用户你可以[创建一个新的Token](https://github.com/settings/tokens)**注意一定要取消权限上面所有的勾，因为你只需要这个token来防止程序访问Github的API达到上限，不需要更改**
+  - 如果你是SJTU沙L东舰马骨码麻群的成员，你可以使用协会公用Token，具体可以在群里问我或者社长liooil，一般来说社长会把token放进服务器的电脑MOD的ROM里面
 
 ### 注意事项
   - 本程序不支持下载二进制文件    
