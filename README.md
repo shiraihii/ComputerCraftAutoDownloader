@@ -15,7 +15,6 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
      - If you are playing in a Server and have no access to Server's Files
         - Open a turtle ahd type  
         `lua`  
-        `cd /`  
         `content = http.get("https://raw.github.com/shiraihii/ComputerCraftAutoDownloader/master/github.lua")`  
         `file = fs.open("github.lua", "w")`  
         `file.write(content.readAll())`  
@@ -61,7 +60,6 @@ This program is wroten for MOD:ComputerCraft of Minecraft's Turtle
      - 如果你在玩单机模式或者你是服务器的管理员，你可以直接把github.lua塞到电脑MOD的ROM文件夹里面去，这样每台电脑都能直接使用  
      - 否则，你在多人模式服务器里面玩，而且没有管理权限，就需要手工下载  
         - 首先打开一台电脑，并对其进行设置标签，不然你的程序容易丢失。然后打开终端并输入`lua` 进入命令交互模式  
-        `cd /`  
         `content = http.get("https://raw.github.com/shiraihii/ComputerCraftAutoDownloader/master/github.lua")`  
         `file = fs.open("github.lua", "w")`  
         `file.write(content.readAll())`  
